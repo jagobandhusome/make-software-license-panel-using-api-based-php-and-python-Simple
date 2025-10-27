@@ -91,23 +91,23 @@ software-licensing-system/
 - **Python**: 3.8+ (for client applications)
 
 ### 1. Database Setup
-```sql
+sql
 -- Import the database schema
 mysql -u username -p database_name < id20149162_phpadmin.sql
-2. Configuration
+###2. Configuration
 Edit config/config.php with your database credentials:
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'your_database');
 define('DB_USER', 'your_username');
 define('DB_PASS', 'your_password');
-3. Web Server Setup
+###3. Web Server Setup
 Upload PHP files to your web server
 
 Set proper permissions on directories
 
 Configure your web server to point to the admin_panel directory
 
-4. Default Login
+###4. Default Login
 Username: admin
 
 Password: Set during installation (check database)
@@ -154,7 +154,7 @@ Error Handling: Graceful failure modes
 
 Silent Operation: No user interaction required
 
-👥 User Management
+###👥 User Management
 Admin Types
 Super Admin: Full system access, can manage other admins
 
@@ -169,7 +169,7 @@ Export Data: Generate CSV reports
 
 System Monitoring: View dashboard statistics
 
-🔒 Security Features
+###🔒 Security Features
 Authentication System
 Password hashing using password_hash()
 
@@ -197,7 +197,7 @@ Hardware binding
 
 Expiration tracking
 
-🛠️ Development
+###🛠️ Development
 Adding New License Types
 Edit the customer form in forms/customer_form.php to add new license types.
 
@@ -207,7 +207,7 @@ Modify api_response.php to include additional license information in API respons
 Extending Python Client
 Update checkLicense.py to add custom validation logic or integration with your software.
 
-📝 License Management Workflow
+###📝 License Management Workflow
 Create Customer: Add customer details in admin panel
 
 Generate UUID: System automatically creates unique license key
@@ -220,7 +220,7 @@ Activate License: Set status to "Active"
 
 Client Validation: Python client verifies license periodically
 
-🐛 Troubleshooting
+###🐛 Troubleshooting
 Common Issues
 API Not Responding
 
@@ -251,7 +251,7 @@ Enable debug mode in config.php:
 
 php
 define('DEBUG', true);
-🤝 Contributing
+###🤝 Contributing
 Fork the project
 
 Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -262,7 +262,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📞 Support
+###📞 Support
 For support and questions:
 
 Developer: Jagobandhu Some
@@ -271,22 +271,8 @@ WhatsApp: +8801911852314
 
 Email: jagobandhusome@gmail.com
 
-📄 License
+###📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ⭐ If this project helped you, please give it a star on GitHub!
 
-text
-
-This README provides:
-
-1. **Complete system overview** based on your actual code structure
-2. **Specific implementation details** from your PHP and Python files
-3. **Database schema explanation** with your actual table structures
-4. **API documentation** matching your `api_response.php` implementation
-5. **Python client details** from `checkLicense.py`
-6. **Installation instructions** tailored to your setup
-7. **Troubleshooting guide** for common issues
-8. **Professional formatting** with badges and clear sections
-
-The README accurately reflects your software licensing system's capabilities and provides comprehensive documentation for users and developers.
